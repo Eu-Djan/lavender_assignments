@@ -22,7 +22,7 @@ friend_names = list(friend_names)
 
 print("These are your current details: ", user)
 
-# Allow a user to update their personal information, like age and favorite color.e
+# Allow a user to update their personal information, like age and favorite color.
 changes = input("Do you want to make any changes? ").capitalize()
 
 if changes == "Yes":
@@ -38,6 +38,7 @@ if changes == "Yes":
 
 else:
     print(user)
+    
 # Remove a friend from the list.
 remove_friend = input("which friend do you want to remove: ")
 if remove_friend in friend_names:
