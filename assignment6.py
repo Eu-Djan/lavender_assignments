@@ -3,6 +3,7 @@
 #Print("Welcome to the Student Management System")
 
 students = {}
+
 while True:
     print ('''Choose an option: 
     1. Add a Student
