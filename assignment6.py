@@ -34,7 +34,7 @@ while True:
     elif choice == "2":
         student_id = input("enter student to remove: ")
         if student_id in students:#if this student id is in our students master dictionary,
-            del students[student_id] # delete that student id and it's associated content from master dictionary (students)
+            del students[student_id] # delete that student id and its associated content from master dictionary (students)
             print(f"{name} has been removed from the system")
         else:
             print("student not found")
