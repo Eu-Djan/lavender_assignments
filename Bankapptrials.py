@@ -7,21 +7,26 @@ amount = 0
 transaction_history = []
 
 
+
 print("Welcome to 123 Bank ATM ")
 
-
+# Limiting user pin code entries to 5 attempts only
+attempts = 0
+maximum_attempts = 5
   
-while True:
+while attempts < maximum_attempts:
     pin_code = input("enter PIN: ") 
 
-    if pin_code == PIN:
+    if pin_code == PIN: #break the code and move to main menu if pin_code matches PIN
         break
     else:
-        print("Incorrect PIN, try again. ")        
+        attempts = attempts + 1  #increment the value of the attempt variable till it gets to 5
+        print("Incorrect PIN, try again. (You have only 5 attempts) ")  
 
-          
-    
-       
+        if  attempts == maximum_attempts:
+            print("You have exceeded your attempts limit")  
+            exit()
+                
 #check balance
 def check_balance():
     print(f"Your current balance is : {balance}")
