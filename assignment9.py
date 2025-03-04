@@ -13,12 +13,14 @@
 
 class Library:
     def __init__(self):
-        self.books = [] 
+        self.books = [] #an empty list to store books
 
+#add book method
     def add_book(self, title):
         self.books.append(title)
         print(f" {title} has been added to library")
 
+#remove book method
     def remove_book(self, title):
         if title in self.books:
             self.books.remove(title)
@@ -26,12 +28,14 @@ class Library:
         else:
             print(f"{title} not found in library")
 
+#search book method
     def search_book(self, title):
         if title in self.books:
             print(f"{title} is in the library")
         else:
             print(f"{title} is not in the library")
-    
+            
+#display all books method  
     def display_all_books(self):
         if self.books:
             print("These are the available books in the library:")
