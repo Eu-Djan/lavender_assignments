@@ -1,0 +1,46 @@
+
+
+
+
+
+--1. create table Product ( columns id, product_name, category, price);
+
+-- insert into Product values('1','gold','minerals','100');
+
+--2. create table Sales (columns_id INT AUTOINCREMENT, products_id INT, quantity_sold INT, sale_date DATE, total_price DECIMAL)
+
+-- insert into Sales values ('1', '101', '10', '6/03/2025', '100') 
+
+--3. select * from Product
+
+--4. select product_name, price from Product
+
+--5. select * from Sales Limit 2
+
+--6. select * from Sales where total_price > 100
+
+--7. select * from Product Group by category having count(*)>1
+
+--8. select count(*) from  Product
+
+--9. select sum(total_price) from Sales
+
+--10. select avg(price) from Product
+
+
+
+Assignment TAB 11
+
+
+-- create table books (id INT AUTOINCREMENT, Title VARCHAR, Author VARCHAR, Year_Published DATE );
+    
+    -- insert into books values('1', 'Fantastic Beasts', 'JK Rowling', '2001');
+    
+    -- select * from books
+    
+    -- select * from books where Author = 'JK Rowling'
+    
+    -- update books set Year_Published = 2000 where Title = 'Harry Potter'
+    
+    -- delete from books where Title = 'Harry Potter'
+    
